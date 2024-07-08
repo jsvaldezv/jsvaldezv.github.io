@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/jsvaldezv.github.io",
+    basePath: "./",
     output: "export",
-    images: {
-      loader: "akamai",
-      path: "",
-    },
+    images: { unoptimized: true },
     // assetPrefix: "./",
 };
 
