@@ -68,7 +68,7 @@ const Hero = () => {
                             endCountText="k"
                             badgeText="Happy Clients"
                         /> */}
-                        <div className="bg-hero_shape2_dark dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+                        <div className="bg-hero_shape2_dark dark:bg-hero_shape2_dark dark:invert w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
                         <DevImg
                             containerStyles="bg-hero_shape w-[462px] h-[462px] bg-no-repeat relative bg-bottom [clip-path:circle()]"
                             imgSrc="/hero/developer.png"
@@ -76,7 +76,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Icon */}
-                <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+                <div className="md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
                     <RiArrowDownSLine className="text-3xl text-primary" />
                 </div>
             </div>

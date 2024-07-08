@@ -2,13 +2,9 @@ import DevImg from "./Devlmg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // import Image from "next/image";
 
-import { User2, AudioWaveform, Lightbulb, GraduationCap } from "lucide-react";
+import { User2, AudioWaveform, Lightbulb, GraduationCap, Disc3 } from "lucide-react";
 
 const infoData = [
-    {
-        icon: <User2 size={20} />,
-        text: "Jesús Valdez",
-    },
     {
         icon: <AudioWaveform size={20} />,
         text: "Specialized in Audio Plug-ins",
@@ -20,6 +16,10 @@ const infoData = [
     {
         icon: <Lightbulb size={20} />,
         text: "Freelance and Entrepreneur",
+    },
+    {
+        icon: <Disc3 size={20} />,
+        text: "Dj & Producer",
     },
 ];
 
@@ -120,7 +120,7 @@ const About = () => {
     };
 
     return (
-        <section className="xl:h-[860px] pb-12 xl:py-24">
+        <section className="xl:h-[860px] pb-12 xl:py-24 mt-[6rem] mb-[6rem]">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                     About me
@@ -163,7 +163,7 @@ const About = () => {
                                     <div className="text-center xl:text-left">
                                         <h3 className="h3 mb-4">
                                             Creating innovative audio
-                                            applicatins to elevate sound
+                                            applications to elevate sound
                                             production and design.
                                         </h3>
                                         <p className="subtitle max-w-xl max-auto xl:mx-0">
