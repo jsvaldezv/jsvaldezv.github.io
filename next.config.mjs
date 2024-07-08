@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "./",
+    basePath: "/jsvaldezv.github.io",
     output: "export",
     images: { unoptimized: true },
-    // assetPrefix: "./",
 };
 
 export default nextConfig;
