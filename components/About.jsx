@@ -135,7 +135,7 @@ const About = () => {
                     </div>
                     <div className="flex-1">
                         <Tabs defaultValue="personal">
-                            <TabsList className="w-full grid xl:grid-cols-2 xl:max-w-[520px] xl:border dark:border-none">
+                            <TabsList className="w-full grid xl:grid-cols-2 xl:max-w-[520px] xl:border dark:border-none lg:flex md:flex sm:flex">
                                 <TabsTrigger
                                     className="w-[162px] xl:w-auto"
                                     value="personal"
@@ -160,13 +160,13 @@ const About = () => {
                             {/* Tabs content */}
                             <div className="text-lg mt-12 xl:mt-8">
                                 <TabsContent value="personal">
-                                    <div className="text-center xl:text-left">
+                                    <div className="text-center xl:text-left lg:text-center">
                                         <h3 className="h3 mb-4">
                                             Creating innovative audio
                                             applications to elevate sound
                                             production and design.
                                         </h3>
-                                        <p className="subtitle max-w-xl max-auto xl:mx-0">
+                                        <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
                                             As an audio software developer, I
                                             specialize in creating innovative
                                             tools that enhance and transform
