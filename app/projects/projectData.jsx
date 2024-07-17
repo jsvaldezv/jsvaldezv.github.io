@@ -8,6 +8,7 @@ export const projectData = [
         description: "Ping Pong Delay Audio Plug-in",
         link: "https://earcandytech.com/twizzlay",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewGummy.png",
@@ -17,6 +18,7 @@ export const projectData = [
         description: "Chorus Audio Plug-in",
         link: "https://earcandytech.com/gummygroove",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewSweetpoint.png",
@@ -26,6 +28,7 @@ export const projectData = [
         description: "Smart Stereo Field Optimizer",
         link: "https://earcandytech.com/sweetpoint",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewPhono.png",
@@ -35,6 +38,7 @@ export const projectData = [
         description: "Granular Multi FX Audio Plug-in",
         link: "https://earcandytech.com/phonograin",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewShape.png",
@@ -44,6 +48,7 @@ export const projectData = [
         description: "Spectral Harmoniser Auditory Perceptual Enhancer",
         link: "https://www.oikla.com/",
         github: "none",
+        padding: false
     },
     {
         image: "/plugins/viewTlaloc.png",
@@ -53,6 +58,7 @@ export const projectData = [
         description: "Granular Sampler",
         link: "none",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewEsme.png",
@@ -62,6 +68,7 @@ export const projectData = [
         description: "Binaural Convolution Reverb",
         link: "https://earcandytech.com/esmeralda",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewRuby.png",
@@ -71,6 +78,7 @@ export const projectData = [
         description: "Delay with Pitch Shifting",
         link: "https://earcandytech.com/ruby",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewZafiro.png",
@@ -80,6 +88,7 @@ export const projectData = [
         description: "Distortion with LFO modulation",
         link: "https://earcandytech.com/zafiro",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewSpatial.png",
@@ -89,6 +98,7 @@ export const projectData = [
         description: "Move audio through 2,4 and 8 speakers",
         link: "none",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewFunnyDistor.png",
@@ -98,6 +108,7 @@ export const projectData = [
         description: "Distortion",
         link: "none",
         github: "none",
+        padding: true
     },
     {
         image: "/plugins/viewBanana.png",
@@ -107,6 +118,7 @@ export const projectData = [
         description: "FM Synthesiser",
         link: "https://github.com/jsvaldezv/banana-split/releases",
         github: "https://github.com/jsvaldezv/banana-split",
+        padding: true
     },
     // C++
     {
@@ -117,6 +129,7 @@ export const projectData = [
         description: "Recreation of tetris game",
         link: "none",
         github: "none",
+        padding: true
     },
     {
         image: "",
@@ -126,6 +139,7 @@ export const projectData = [
         description: "Recreation of pong game",
         link: "none",
         github: "none",
+        padding: true
     },
     // Web development
     {
@@ -136,6 +150,7 @@ export const projectData = [
         description: "Current Company Website",
         link: "https://earcandytech.com/",
         github: "none",
+        padding: true
     },
     {
         image: "/webdev/viewDrum.png",
@@ -145,6 +160,7 @@ export const projectData = [
         description: "Real Time Drum Machine in the Browser",
         link: "https://jsvaldezv.github.io/drum-machine/",
         github: "https://github.com/jsvaldezv/drum-machine",
+        padding: true
     },
     {
         image: "/webdev/viewVisualsP5.png",
@@ -154,6 +170,7 @@ export const projectData = [
         description: "Collection of audio visuals made in p5",
         link: "https://jsvaldezv.github.io/visuals-p5/",
         github: "https://github.com/jsvaldezv/visuals-p5",
+        padding: true
     },
     {
         image: "/webdev/viewLiminal.png",
@@ -163,6 +180,7 @@ export const projectData = [
         description: "Virtual space inspired by La llorona",
         link: "https://jsvaldezv.github.io/liminal-spaces/",
         github: "https://github.com/jsvaldezv/liminal-spaces",
+        padding: true
     },
     {
         image: "/webdev/viewSynthKids.png",
@@ -172,6 +190,7 @@ export const projectData = [
         description: "Synth so children can learn music theory",
         link: "https://jsvaldezv.github.io/synth-kids/",
         github: "https://github.com/jsvaldezv/synth-kids",
+        padding: true
     },
     {
         image: "/webdev/viewPluginsStore.png",
@@ -181,6 +200,7 @@ export const projectData = [
         description: "Plug-in store as a web application",
         link: "none",
         github: "https://github.com/jsvaldezv/audio-plugins-store",
+        padding: true
     },
     {
         image: "/webdev/viewMatrix.png",
@@ -190,6 +210,7 @@ export const projectData = [
         description: "Digital and analog clock with matrix style",
         link: "https://jsvaldezv.github.io/matrix-clock/",
         github: "https://github.com/jsvaldezv/matrix-clock",
+        padding: true
     },
     // Machine learning
     {
@@ -200,6 +221,7 @@ export const projectData = [
         description: "Trained with random forest",
         link: "none",
         github: "https://github.com/jsvaldezv/instruments-classifier",
+        padding: true
     },
     {
         image: "/py-ml/viewArp.png",
@@ -209,6 +231,7 @@ export const projectData = [
         description: "Arpeggiator based on Ableton's Live arp",
         link: "none",
         github: "https://github.com/jsvaldezv/midi-arpeggiator",
+        padding: true
     },
     {
         image: "",
@@ -218,6 +241,7 @@ export const projectData = [
         description: "Melody creator based on a musical scale",
         link: "none",
         github: "https://github.com/jsvaldezv/aleatory-melody",
+        padding: true
     },
     {
         image: "/py-ml/viewBuilder.png",
@@ -227,6 +251,7 @@ export const projectData = [
         description: "Drum machine",
         link: "none",
         github: "https://github.com/jsvaldezv/smart-builder",
+        padding: true
     },
     {
         image: "/py-ml/viewMixer.png",
@@ -236,6 +261,7 @@ export const projectData = [
         description: "Melody creator based on a musical scale",
         link: "none",
         github: "https://github.com/jsvaldezv/smart-mixer",
+        padding: true
     },
     // Music Production
     {
@@ -246,6 +272,7 @@ export const projectData = [
         description: "Production and mixing",
         link: "https://open.spotify.com/track/5bHwdYhNEWpLear0JwMq2Y?si=0e2e1b9e2bb7484d",
         github: "none",
+        padding: true
     },
     {
         image: "/songs/curse.png",
@@ -255,6 +282,7 @@ export const projectData = [
         description: "Recording and mixing",
         link: "https://open.spotify.com/track/6fFCG4whoCr8jIhOs992Fa?si=3b2f492d0c284201",
         github: "none",
+        padding: true
     },
     {
         image: "/songs/huxiono.png",
@@ -264,6 +292,7 @@ export const projectData = [
         description: "Production and mixing",
         link: "https://open.spotify.com/album/6d9tC8wDosPXl0fPP4wlyA?si=D1VEwt_xR6y8gXET5SUeyQ",
         github: "none",
+        padding: true
     },
     {
         image: "/songs/kosako.png",
@@ -273,6 +302,7 @@ export const projectData = [
         description: "Production and mixing",
         link: "https://open.spotify.com/track/6TiQY2CtcBGpaeHGyjtNBR?si=023e23dcbe74423f",
         github: "none",
+        padding: true
     },
     {
         image: "/songs/login.png",
@@ -282,6 +312,7 @@ export const projectData = [
         description: "Production, mixing and mastering",
         link: "https://open.spotify.com/album/6nojGFr0Tlcs7n9EXpiHED?si=tZHG1YTVThGVR9-GR9IMIA",
         github: "none",
+        padding: true
     },
     {
         image: "/songs/unbreakable.png",
@@ -291,5 +322,6 @@ export const projectData = [
         description: "Recording and mixing",
         link: "https://open.spotify.com/album/0L4fwtLkpo24YCUQDDj598?si=NllzrnMUS3KTjTykfqU05Q",
         github: "none",
+        padding: true
     },
 ];

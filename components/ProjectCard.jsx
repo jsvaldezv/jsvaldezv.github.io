@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
             <CardHeader className="p-0">
                 <div className="relative w-full h-[245px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
                     <Image
-                        className="absolute shadow-2xl top-0 object-cover lg:h-[15.5rem] md:h-[15.5rem] sm:h-[17rem] object-cover"
+                        className="absolute shadow-2xl top-0 object-cover lg:h-[15.5rem] md:h-[15.5rem] sm:w-[100%] sm:h-[100%] sm:bg-center sm:bg-cover sm:bg-no-repeat"
                         src={project.image}
                         width={500}
                         height={0}
@@ -55,6 +55,7 @@ const ProjectCard = ({ project }) => {
                 <p className="text-muted-foreground text-lg">
                     {project.technology}
                 </p>
+                { project.padding ? <div className="py-[0.8rem]"></div> : <></> }
             </div>
         </Card>
     );
