@@ -44,12 +44,12 @@ const About = () => {
     };
 
     return (
-        <section className="xl:h-[860px] pb-12 xl:py-24 mt-[6rem] mb-[6rem]">
+        <section className="xl:h-[1400px] pb-12 xl:py-24 mt-[6rem] mb-[6rem]">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                     About me
                 </h2>
-                <div className="flex flex-col xl:flex-row">
+                <div className="flex flex-col xl:flex-row xl:items-center">
                     {/* Image */}
                     <div className="hidden xl:flex flex-1 relative">
                         <DevImg
@@ -97,6 +97,58 @@ const About = () => {
                                 </TabsContent>
                             </div>
                         </Tabs>
+                    </div>
+                </div>
+                <div className="flex flex-col xl:flex-row mt-20 xl:items-center">
+                    <div className="flex-1">
+                        <Tabs defaultValue="personal">
+                            {/* Tabs content */}
+                            <div className="text-lg mt-12 xl:mt-8">
+                                <TabsContent value="personal">
+                                    <div className="text-center xl:text-left lg:text-center">
+                                        <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
+                                            Jesús Valdez holds a B.S. in Music
+                                            Production Engineering from TEC de
+                                            Monterrey, where he specialized in
+                                            audio software development,
+                                            primarily JUCE, C++ and Audio
+                                            Plug-ins. Lorem ipsum dolor, sit
+                                            amet consectetur adipisicing elit.
+                                            Provident iste ducimus dolor modi
+                                            repellendus corrupti exercitationem
+                                            deleniti ipsa! Voluptatibus ut nihil
+                                            debitis aliquid harum molestias eos
+                                            corrupti rerum incidunt assumenda?
+                                        </p>
+                                        <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Id eos
+                                            necessitatibus laboriosam doloremque
+                                            at magnam perspiciatis dignissimos
+                                            error amet quibusdam debitis ad
+                                            numquam nostrum atque, similique
+                                            quidem provident sed consequatur.
+                                        </p>
+                                        <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit.
+                                            Quasi, obcaecati quia dolor odio
+                                            eveniet, nam sit iusto, consequatur
+                                            possimus atque hic? Quibusdam
+                                            veritatis molestiae atque modi
+                                            similique, suscipit nulla quisquam.
+                                        </p>
+                                    </div>
+                                </TabsContent>
+                            </div>
+                        </Tabs>
+                    </div>
+                    {/* Image */}
+                    <div className="hidden xl:flex flex-1 relative xl:justify-center">
+                        <DevImg
+                            containerStyles="bg_about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative [clip-path:circle()]"
+                            imgSrc="/about/developer-two.png"
+                        />
                     </div>
                 </div>
             </div>

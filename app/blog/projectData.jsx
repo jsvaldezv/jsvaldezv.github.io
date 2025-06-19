@@ -6,7 +6,7 @@ export const projectData = [
         technology: "JUCE",
         name: "What is JUCE?",
         description: "Smart Stereo Field Optimizer",
-        link: "https://earcandytech.com/sweetpoint",
+        link: "/blog/juce/why-juce",
         github: "none",
         padding: true,
     },
