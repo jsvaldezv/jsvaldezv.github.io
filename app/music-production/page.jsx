@@ -14,9 +14,7 @@ const Projects = () => {
     const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all");
     const filteredProjects = projectData.filter((project) => {
-        return category === "all"
-            ? project
-            : project.category === category;
+        return category === "all" ? project : project.category === category;
     });
 
     return (
@@ -46,7 +44,17 @@ const Projects = () => {
                         {filteredProjects.map((project, index) => {
                             return (
                                 <TabsContent value={category} key={index}>
-                                    <ProjectCard project={project} />
+                                    {/* <ProjectCard project={project} /> */}
+                                    <div class="w-full max-w-xl mx-auto aspect-[16/9] flex justify-center">
+                                        <iframe
+                                            class="w-full h-full rounded-xl"
+                                            src="https://open.spotify.com/embed/track/58EM1w815O5XZGWSF7DUCf?utm_source=generator"
+                                            frameborder="0"
+                                            allowfullscreen=""
+                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                            loading="lazy"
+                                        ></iframe>
+                                    </div>
                                 </TabsContent>
                             );
                         })}
