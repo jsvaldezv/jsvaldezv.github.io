@@ -15,6 +15,26 @@ const SoftwareHero = ({
     return (
         <section className="min-h-screen pt-12">
             <div className="container mx-auto">
+                <a
+                    className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline focus:outline-hidden focus:underline dark:text-blue-500"
+                    href="/software"
+                >
+                    <svg
+                        className="shrink-0 size-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    Back to Software
+                </a>
                 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
                     <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                         <div className="lg:col-span-3">
@@ -70,8 +90,8 @@ const SoftwareHero = ({
                     </div>
                 </div>
 
-                <div class="relative overflow-hidden mb-10">
-                    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+                <div className="relative overflow-hidden mb-10">
+                    <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
                         <div className="">
                             <div className="max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 lg:py-24 mx-auto">
                                 <blockquote className="max-w-4xl mx-auto">
@@ -87,10 +107,10 @@ const SoftwareHero = ({
                                 </blockquote>
                             </div>
                         </div>
-                        <div class="mt-10 max-w-5xl mx-auto">
-                            <div class="relative w-full aspect-video">
+                        <div className="mt-10 max-w-5xl mx-auto">
+                            <div className="relative w-full aspect-video">
                                 <iframe
-                                    class="absolute top-0 left-0 w-full h-full"
+                                    className="absolute top-0 left-0 w-full h-full"
                                     src={YouTubeLink}
                                     title="YouTube video player"
                                     frameborder="0"

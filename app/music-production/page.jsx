@@ -45,9 +45,9 @@ const Projects = () => {
                             return (
                                 <TabsContent value={category} key={index}>
                                     {/* <ProjectCard project={project} /> */}
-                                    <div class="w-full max-w-xl mx-auto aspect-[16/9] flex justify-center">
+                                    <div className="w-full max-w-xl mx-auto aspect-[16/9] flex justify-center">
                                         <iframe
-                                            class="w-full h-full rounded-xl"
+                                            className="w-full h-full rounded-xl"
                                             src="https://open.spotify.com/embed/track/58EM1w815O5XZGWSF7DUCf?utm_source=generator"
                                             frameborder="0"
                                             allowfullscreen=""
