@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ProjectCard from "@/components/ProjectCard";
+import TrackCard from "@/components/TrackCard";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import { projectData } from "./projectData";
 
@@ -44,17 +44,7 @@ const Projects = () => {
                         {filteredProjects.map((project, index) => {
                             return (
                                 <TabsContent value={category} key={index}>
-                                    {/* <ProjectCard project={project} /> */}
-                                    <div className="w-full max-w-xl mx-auto aspect-[16/9] flex justify-center">
-                                        <iframe
-                                            className="w-full h-full rounded-xl"
-                                            src="https://open.spotify.com/embed/track/58EM1w815O5XZGWSF7DUCf?utm_source=generator"
-                                            frameborder="0"
-                                            allowfullscreen=""
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
+                                    <TrackCard project={project} />
                                 </TabsContent>
                             );
                         })}

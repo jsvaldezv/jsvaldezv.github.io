@@ -1,11 +1,32 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const BlogPage = ({ MainTitle }) => {
     return (
         <section>
             {/* Blog Article */}
             <div className="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
+                <Link
+                    className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline focus:outline-hidden focus:underline dark:text-blue-500 mb-10"
+                    href="/blog"
+                >
+                    <svg
+                        className="shrink-0 size-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    Back to Blog
+                </Link>
                 <div className="max-w-2xl">
                     {/* Avatar Media */}
                     <div className="flex justify-between items-center mb-6">

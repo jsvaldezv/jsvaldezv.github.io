@@ -2,18 +2,18 @@
 import React, { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import { projectData } from "./projectData";
+import { blogsList } from "./blogsList";
 
 // Remove category duplicates
 const uniqueCategories = [
     "all",
-    ...new Set(projectData.map((item) => item.category)),
+    ...new Set(blogsList.map((item) => item.category)),
 ];
 
 const Projects = () => {
     const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all");
-    const filteredProjects = projectData.filter((project) => {
+    const filteredProjects = blogsList.filter((project) => {
         return category === "all"
             ? project
             : project.category === category;
