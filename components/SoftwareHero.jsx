@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const SoftwareHero = ({
     MainTitle,
@@ -15,10 +16,8 @@ const SoftwareHero = ({
     return (
         <section className="min-h-screen pt-12">
             <div className="container mx-auto">
-                <a
-                    className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline focus:outline-hidden focus:underline dark:text-blue-500"
-                    href="/software"
-                >
+                <Link className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline focus:outline-hidden focus:underline dark:text-blue-500"
+                    href="/software">
                     <svg
                         className="shrink-0 size-4"
                         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +33,7 @@ const SoftwareHero = ({
                         <path d="m15 18-6-6 6-6" />
                     </svg>
                     Back to Software
-                </a>
+                </Link>
                 <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
                     <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                         <div className="lg:col-span-3">
@@ -47,18 +46,22 @@ const SoftwareHero = ({
                             <p className="mt-3 text-lg text-gray-800 dark:text-neutral-400">
                                 {ShortDescription}
                             </p>
-                            <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
-                                <a
-                                    className="w-full sm:w-auto py-3 px-8 inline-flex justify-center items-center gap-x-2
+                            {ExternalLink === "none" ? (
+                                <div></div>
+                            ) : (
+                                <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+                                    <a
+                                        className="w-full sm:w-auto py-3 px-8 inline-flex justify-center items-center gap-x-2
                                                 text-sm font-medium rounded-lg border border-transparent bg-primary text-white 
                                                 hover:bg-foreground focus:outline-hidden focus:bg-foreground disabled:opacity-50 
                                                 disabled:pointer-events-none"
-                                    href={ExternalLink}
-                                    target="_blank"
-                                >
-                                    Try it now!
-                                </a>
-                            </div>
+                                        href={ExternalLink}
+                                        target="_blank"
+                                    >
+                                        Try it now!
+                                    </a>
+                                </div>
+                            )}
 
                             <div className="mt-6 lg:mt-12">
                                 <span className="text-xs font-medium text-gray-800 uppercase dark:text-neutral-200">
@@ -107,19 +110,23 @@ const SoftwareHero = ({
                                 </blockquote>
                             </div>
                         </div>
-                        <div className="mt-10 max-w-5xl mx-auto">
-                            <div className="relative w-full aspect-video">
-                                <iframe
-                                    className="absolute top-0 left-0 w-full h-full"
-                                    src={YouTubeLink}
-                                    title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen
-                                ></iframe>
+                        {YouTubeLink === "none" ? (
+                            <></>
+                        ) : (
+                            <div className="mt-10 max-w-5xl mx-auto">
+                                <div className="relative w-full aspect-video">
+                                    <iframe
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        src={YouTubeLink}
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
             </div>
