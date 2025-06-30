@@ -9,7 +9,6 @@ const links = [
     { path: "/blog", name: "blog" },
     { path: "/talks", name: "talks" },
     { path: "/cv", name: "CV" },
-    { path: "/repositories", name: "repositories" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {

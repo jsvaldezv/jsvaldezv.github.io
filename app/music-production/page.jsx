@@ -2,18 +2,18 @@
 import React, { useState } from "react";
 import TrackCard from "@/components/TrackCard";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import { projectData } from "./projectData";
+import { productions } from "./productions";
 
 // Remove category duplicates
 const uniqueCategories = [
     "all",
-    ...new Set(projectData.map((item) => item.category)),
+    ...new Set(productions.map((item) => item.category)),
 ];
 
 const Projects = () => {
     const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all");
-    const filteredProjects = projectData.filter((project) => {
+    const filteredProjects = productions.filter((project) => {
         return category === "all" ? project : project.category === category;
     });
 

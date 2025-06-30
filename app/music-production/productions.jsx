@@ -1,4 +1,4 @@
-export const projectData = [
+export const productions = [
     // Music Production
     {
         main_image: "/songs/tramontana.png",
