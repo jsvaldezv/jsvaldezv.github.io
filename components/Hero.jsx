@@ -46,13 +46,14 @@ const Hero = () => {
                             iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
                         />
                     </div>
-                    <div className="hidden xl:flex relative">
+                    <div className="hidden xl:flex relative ">
                         {/* Badge */}
                         <Badge
                             containerStyles="absolute top-[24%] -left-[5rem]"
                             icon={<RiBriefcase4Fill />}
+                            startCountText="+"
                             endCountNum={5}
-                            badgeText="Years of experience"
+                            badgeText="years of experience"
                         />
                         {/* <Badge
                             containerStyles="absolute top-[80%] -left-[1rem]"
