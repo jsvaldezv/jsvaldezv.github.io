@@ -25,22 +25,8 @@ const Projects = () => {
                 </h2>
                 {/* Tabs */}
                 <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-                    <TabsList className="w-full grid h-full md:grid-cols-2 lg:max-w-[500px] mb-12 mx-auto md:border dark:border-none">
-                        {categories.map((category, index) => {
-                            return (
-                                <TabsTrigger
-                                    onClick={() => setCategory(category)}
-                                    value={category}
-                                    key={index}
-                                    className="capitalize w-[162px] md:w-auto md:text-xs xl:text-lg"
-                                >
-                                    {category}
-                                </TabsTrigger>
-                            );
-                        })}
-                    </TabsList>
                     {/* Tabs content */}
-                    <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4 pb-4">
                         {filteredProjects.map((project, index) => {
                             return (
                                 <TabsContent value={category} key={index}>

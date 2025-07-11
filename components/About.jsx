@@ -112,31 +112,32 @@ const About = () => {
                                             Monterrey, where he specialized in
                                             audio software development,
                                             primarily JUCE, C++ and Audio
-                                            Plug-ins. Lorem ipsum dolor, sit
-                                            amet consectetur adipisicing elit.
-                                            Provident iste ducimus dolor modi
-                                            repellendus corrupti exercitationem
-                                            deleniti ipsa! Voluptatibus ut nihil
-                                            debitis aliquid harum molestias eos
-                                            corrupti rerum incidunt assumenda?
+                                            Plug-ins with 5+ years of experience
+                                            in designing, developing, and
+                                            implementing audio software.
                                         </p>
                                         <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit. Id eos
-                                            necessitatibus laboriosam doloremque
-                                            at magnam perspiciatis dignissimos
-                                            error amet quibusdam debitis ad
-                                            numquam nostrum atque, similique
-                                            quidem provident sed consequatur.
+                                            He specialized in audio plugin
+                                            development, real-time audio
+                                            algorithms, and user interface
+                                            design, with a proven track record
+                                            of projects and commercial products
+                                            used in music production, mixing,
+                                            and mastering. In addition, he has
+                                            experience building web applications
+                                            focused on audio and implementing
+                                            machine learning solutions for audio
+                                            processing.
                                         </p>
                                         <p className="subtitle max-w-xl max-auto xl:mx-0 lg:max-w-[100%] md:max-w-[100%] sm:max-w-[100%]">
-                                            Lorem ipsum dolor sit amet
-                                            consectetur, adipisicing elit.
-                                            Quasi, obcaecati quia dolor odio
-                                            eveniet, nam sit iusto, consequatur
-                                            possimus atque hic? Quibusdam
-                                            veritatis molestiae atque modi
-                                            similique, suscipit nulla quisquam.
+                                            His background as a music producer,
+                                            DJ, and audio engineer gives him a
+                                            deep understanding of both the
+                                            technical and creative aspects of
+                                            audio technology. Currently
+                                            exploring artificial intelligence,
+                                            business, and entrepreneurship to
+                                            expand my knowledge and skills.
                                         </p>
                                     </div>
                                 </TabsContent>

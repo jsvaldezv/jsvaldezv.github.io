@@ -26,9 +26,9 @@ const SoftwareHero = ({
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     >
                         <path d="m15 18-6-6 6-6" />
                     </svg>
@@ -119,10 +119,10 @@ const SoftwareHero = ({
                                         className="absolute top-0 left-0 w-full h-full"
                                         src={YouTubeLink}
                                         title="YouTube video player"
-                                        frameborder="0"
+                                        frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin"
-                                        allowfullscreen
+                                        referrerPolicy="strict-origin-when-cross-origin"
+                                        allowFullScreen
                                     ></iframe>
                                 </div>
                             </div>
