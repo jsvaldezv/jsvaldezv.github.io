@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import JobPosition from "./position-job";
+import { jobIcon, toolIcon, educationIcon } from "./icons";
 
 const Projects = () => {
     return (
@@ -10,6 +11,9 @@ const Projects = () => {
                     CV
                 </h2>
                 <div className="pt-8">
+                    <h2 className="xl:mb-8 sm:mb-12 text-left font-bold font-semibold text-xl text-gray-800 dark:text-neutral-200">
+                        Work Experience
+                    </h2>
                     <JobPosition
                         date={"Jan 2021 - Present"}
                         mainTitle={"Audio Software Developer"}
@@ -23,6 +27,7 @@ const Projects = () => {
                             "Developed DSP algorithms for real time granular synthesis, synthesizers, convolution, filters, time-based, dynamic and reverb effects, as well as real-time visualizers such as spectrograms and goniometers, ensuring accurate and responsive audio representation.",
                             "Instructor for Ear Candy Technologies' Audio Plugin Development course, guiding students in designing and implementing plugins. Over 20+ plugins have been developed as final projects across Latin America and Spain.",
                         ]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Aug 2022 - Jan 2025"}
@@ -32,6 +37,7 @@ const Projects = () => {
                         bullets={[
                             "Taught audio plugin development with C++ and JUCE, covering DSP fundamentals and real-time audio implementation, earning a 95% student approval rating.",
                         ]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Aug 2022 - Jan 2025"}
@@ -42,6 +48,7 @@ const Projects = () => {
                             "Developed Shape audio plugin with JUCE framework and C++ designed to refine perceived loudness and frequency balance, ensuring a natural, ear-friendly, and musically inspiring sound. This plugin have been used by 6k+ music producers and engineers, enhancing mixing and mastering workflows.",
                             "Additionally, Implemented a cloud-connected licensing system with Google Cloud, streamlining software authentication and distribution.",
                         ]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Aug 2023 - Jan 2024"}
@@ -52,6 +59,7 @@ const Projects = () => {
                             "Developed audio plugins with JUCE framework and C++ focused on real-time drum instruments, achieving low-latency performance for responsive playback.",
                             "Integrated a cloud-connected generative system for sample creation, enabling dynamic and scalable audio content generation, with asynchronous processing to reduce load times by 25%.",
                         ]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Feb 2023 - Sep 2023"}
@@ -62,6 +70,7 @@ const Projects = () => {
                             "Developed audio plugins with JUCE framework and C++ focused on real-time granular instrument with efficient DSP implementations.",
                             "Designed and implemented user interfaces from scratch using the JUCE framework and C++, ensuring fluid real-time interaction and efficient CPU usage.",
                         ]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Aug 2018 - Mar 2020"}
@@ -71,6 +80,7 @@ const Projects = () => {
                             "Produced music for artists and bands, handling recording, audio editing, and mixing using Ableton Live and Pro Tools. Several singles were successfully released on digital streaming platforms."
                         }
                         bullets={[]}
+                        icon={jobIcon}
                     />
                     <JobPosition
                         date={"Jun 2019 - Dec 2019"}
@@ -80,6 +90,91 @@ const Projects = () => {
                             "Developed audio programming for a spatialization plugin tailored to the facilities of the Digital Culture Center. Used JUCE and C++ to design and implement the final audio plugin, optimizing immersive sound experiences and enhancing spatial audio rendering."
                         }
                         bullets={[]}
+                        icon={jobIcon}
+                    />
+                </div>
+                <div className="pt-8">
+                    <h2 className="xl:mb-8 sm:mb-12 text-left font-bold font-semibold text-xl text-gray-800 dark:text-neutral-200">
+                        Education
+                    </h2>
+                    <JobPosition
+                        date={"Aug 2018 - Dec 2022"}
+                        mainTitle={
+                            "B.S. in Digital Music Production Engineering"
+                        }
+                        subTitle={
+                            "Instituto Tecnológico y de Estudios Superiores de Monterrey"
+                        }
+                        description={""}
+                        bullets={[
+                            "Borrego de Oro Award for entrepreneurship in recognition of the success and innovation of Ear Candy Technologies, an audio plugin company.",
+                        ]}
+                        icon={educationIcon}
+                    />
+                </div>
+                <div className="pt-8">
+                    <h2 className="xl:mb-8 sm:mb-12 text-left font-bold font-semibold text-xl text-gray-800 dark:text-neutral-200">
+                        Software
+                    </h2>
+                    <JobPosition
+                        date={""}
+                        mainTitle={"Programming languages"}
+                        subTitle={""}
+                        description={""}
+                        bullets={[
+                            "C++ - Advanced level",
+                            "Python - Intermediate level",
+                            "JavaScript - Intermediate level",
+                        ]}
+                        icon={toolIcon}
+                    />
+                    <JobPosition
+                        date={""}
+                        mainTitle={"Audio libraries and frameworks"}
+                        subTitle={""}
+                        description={""}
+                        bullets={["JUCE", "Max MSP", "Scikit Learn"]}
+                        icon={toolIcon}
+                    />
+                    <JobPosition
+                        date={""}
+                        mainTitle={"Development Tools"}
+                        subTitle={""}
+                        description={""}
+                        bullets={[
+                            "Git and GitHub",
+                            "CMake",
+                            "Bash",
+                            "GitHub Actions",
+                        ]}
+                        icon={toolIcon}
+                    />
+                    <JobPosition
+                        date={""}
+                        mainTitle={"Web and Cloud"}
+                        subTitle={""}
+                        description={""}
+                        bullets={[
+                            "HTML",
+                            "CSS",
+                            "React, Next and Node JS",
+                            "Firebase",
+                            "Google Cloud (firestore, cloud functions and buckets)",
+                        ]}
+                        icon={toolIcon}
+                    />
+                    <JobPosition
+                        date={""}
+                        mainTitle={"DAWs"}
+                        subTitle={""}
+                        description={""}
+                        bullets={[
+                            "Pro Tools",
+                            "Ableton Live",
+                            "Reaper",
+                            "Logic Pro",
+                        ]}
+                        icon={toolIcon}
                     />
                 </div>
             </div>
