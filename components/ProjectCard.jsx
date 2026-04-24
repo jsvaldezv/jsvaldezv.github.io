@@ -1,59 +1,54 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardHeader } from "./ui/card";
 import { Github, Link2Icon } from "lucide-react";
-import { Badge } from "./ui/badge";
 
 const ProjectCard = ({ project }) => {
     return (
-        <Card className="group overflow-hidden relative">
-            <CardHeader className="p-0">
-                <div className="relative w-full h-[245px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
-                    <Image
-                        className="absolute shadow-2xl top-0 object-cover lg:h-[15.5rem] md:h-[15.5rem] sm:w-[100%] sm:h-[100%] sm:bg-center sm:bg-cover sm:bg-no-repeat"
-                        src={project.main_image}
-                        width={500}
-                        height={0}
-                        alt=""
-                        priority
-                    />
-                    <div className="flex gap-x-4">
-                        {project.link !== "none" ? (
-                            <Link
-                                href={project.path}
-                                className="bg-tertiary dark:bg-white w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-                            >
-                                <Link2Icon className="text-black" />
-                            </Link>
-                        ) : (
-                            <></>
-                        )}
-
-                        {project.github !== "none" ? (
-                            <Link
-                                href={project.github}
-                                target="_blank"
-                                className="bg-tertiary dark:bg-white w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-                            >
-                                <Github className="text-black" />
-                            </Link>
-                        ) : (
-                            <></>
-                        )}
-                    </div>
+        <div className="group rounded-xl border border-border bg-card overflow-hidden">
+            {/* Image area */}
+            <div className="relative aspect-video overflow-hidden bg-secondary">
+                <Image
+                    src={project.main_image}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    alt={project.main_title}
+                />
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-all duration-300" />
+                {/* Action buttons */}
+                <div className="absolute inset-0 flex items-center justify-center gap-3">
+                    {project.link !== "none" && (
+                        <Link
+                            href={project.path}
+                            className="w-10 h-10 rounded-full bg-background flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-secondary"
+                        >
+                            <Link2Icon size={16} />
+                        </Link>
+                    )}
+                    {project.github !== "none" && (
+                        <Link
+                            href={project.github}
+                            target="_blank"
+                            className="w-10 h-10 rounded-full bg-background flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 delay-75 hover:bg-secondary"
+                        >
+                            <Github size={16} />
+                        </Link>
+                    )}
                 </div>
-            </CardHeader>
-            <div className="h-full px-8 py-6">
-                <Badge className="text-sm font-medium mb-2 absolute top-4 left-5">
+            </div>
+            {/* Content */}
+            <div className="p-5">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">
                     {project.category}
-                </Badge>
-                <h4 className="h4 mb-1">{project.main_title}</h4>
-                <p className="text-muted-foreground text-lg font-semibold">
+                </p>
+                <h3 className="font-semibold text-foreground mb-1">
+                    {project.main_title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
                     {project.short_description}
                 </p>
-                {project.padding ? <div className="py-[0.8rem]"></div> : <></>}
             </div>
-        </Card>
+        </div>
     );
 };
 

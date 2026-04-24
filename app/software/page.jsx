@@ -18,21 +18,22 @@ const Projects = () => {
     });
 
     return (
-        <section className="min-h-screen pt-12">
-            <div className="container mx-auto">
-                <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-                    Software
-                </h2>
+        <section className="min-h-screen py-16">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-10">
+                    <p className="section-eyebrow">Work</p>
+                    <h2 className="h2">Software Projects</h2>
+                </div>
                 {/* Tabs */}
-                <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-                    <TabsList className="w-full grid h-full md:grid-cols-5 lg:max-w-[1200px] mb-12 mx-auto md:border dark:border-none">
+                <Tabs defaultValue={category} className="mb-16">
+                    <TabsList className="w-full flex flex-wrap h-auto gap-1 mb-8 mx-auto max-w-3xl">
                         {categories.map((category, index) => {
                             return (
                                 <TabsTrigger
                                     onClick={() => setCategory(category)}
                                     value={category}
                                     key={index}
-                                    className="capitalize w-[162px] md:w-auto md:text-xs xl:text-lg"
+                                    className="capitalize text-sm flex-grow-0"
                                 >
                                     {category}
                                 </TabsTrigger>
@@ -40,7 +41,7 @@ const Projects = () => {
                         })}
                     </TabsList>
                     {/* Tabs content */}
-                    <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                         {filteredProjects.map((project, index) => {
                             return (
                                 <TabsContent value={category} key={index}>

@@ -90,7 +90,8 @@ export const projects = [
         external_link: "none",
         tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
         main_image: "/plugins/viewTlaloc.png",
-        yt_link: "https://www.youtube.com/embed/qafHudaDKiE?si=Kq7yJnPE00aOrfjO",
+        yt_link:
+            "https://www.youtube.com/embed/qafHudaDKiE?si=Kq7yJnPE00aOrfjO",
         path: "/software/audio-plugin/tlaloc",
         github: "none",
         padding: true,
@@ -183,7 +184,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/banana-split",
         tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
         main_image: "/plugins/viewBanana.png",
-        yt_link: "https://www.youtube.com/embed/Zo8SV2MvIbw?si=WxW14SZExok0zR0F",
+        yt_link:
+            "https://www.youtube.com/embed/Zo8SV2MvIbw?si=WxW14SZExok0zR0F",
         path: "/software/audio-plugin/banana-split",
         github: "https://github.com/jsvaldezv/banana-split",
         padding: true,
@@ -214,7 +216,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/pong-game",
         tech_used: ["/logos/cpp.png"],
         main_image: "/cpp/pong.png",
-        yt_link: "https://www.youtube.com/embed/FG5PA4xKSSo?si=D-ag1ub0aVC-ENc4",
+        yt_link:
+            "https://www.youtube.com/embed/FG5PA4xKSSo?si=D-ag1ub0aVC-ENc4",
         path: "/software/cpp/pong-game",
         github: "https://github.com/jsvaldezv/pong-game",
         padding: true,
@@ -259,7 +262,8 @@ export const projects = [
         external_link: "https://jsvaldezv.github.io/drum-machine/",
         tech_used: ["/logos/js.png"],
         main_image: "/webdev/viewDrum.png",
-        yt_link: "https://www.youtube.com/embed/nKBvksiq6Ds?si=j6dL81pm4wiPBANr",
+        yt_link:
+            "https://www.youtube.com/embed/nKBvksiq6Ds?si=j6dL81pm4wiPBANr",
         path: "/software/web-dev/drum-machine",
         github: "https://github.com/jsvaldezv/drum-machine",
         padding: true,
@@ -274,7 +278,8 @@ export const projects = [
         external_link: "https://jsvaldezv.github.io/p5-visual-explorations/",
         tech_used: ["/logos/js.png", "/logos/p5.png"],
         main_image: "/webdev/viewVisualsP5.png",
-        yt_link: "https://www.youtube.com/embed/VgpMJDB4InI?si=K_c0PuU38JJ9EGjD",
+        yt_link:
+            "https://www.youtube.com/embed/VgpMJDB4InI?si=K_c0PuU38JJ9EGjD",
         path: "/software/web-dev/visuals-p5",
         github: "https://github.com/jsvaldezv/p5-visual-explorations",
         padding: true,
@@ -289,7 +294,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/liminal-spaces",
         tech_used: ["/logos/js.png", "/logos/three.png"],
         main_image: "/webdev/viewLiminal.png",
-        yt_link: "https://www.youtube.com/embed/L7oxpoSqHJg?si=RKL3Qc6LFYZzEr-d",
+        yt_link:
+            "https://www.youtube.com/embed/L7oxpoSqHJg?si=RKL3Qc6LFYZzEr-d",
         path: "/software/web-dev/liminal-spaces",
         github: "https://github.com/jsvaldezv/liminal-spaces",
         padding: true,
@@ -304,7 +310,8 @@ export const projects = [
         external_link: "https://jsvaldezv.github.io/synth-kids/",
         tech_used: ["/logos/js.png"],
         main_image: "/webdev/viewSynthKids.png",
-        yt_link: "https://www.youtube.com/embed/qJ8x_vPE3FY?si=vRoEKqU-3h6qR6QD",
+        yt_link:
+            "https://www.youtube.com/embed/qJ8x_vPE3FY?si=vRoEKqU-3h6qR6QD",
         path: "/software/web-dev/synth-kids",
         github: "https://github.com/jsvaldezv/synth-kids",
         padding: true,
@@ -319,7 +326,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/audio-plugins-store",
         tech_used: ["/logos/js.png", "/logos/react.png"],
         main_image: "/webdev/viewPluginsStore.png",
-        yt_link: "https://www.youtube.com/embed/akgZOKM00bM?si=9GvUYDIbykwEYgAM",
+        yt_link:
+            "https://www.youtube.com/embed/akgZOKM00bM?si=9GvUYDIbykwEYgAM",
         path: "/software/web-dev/audio-plugins-store",
         github: "https://github.com/jsvaldezv/audio-plugins-store",
         padding: true,
@@ -334,12 +342,11 @@ export const projects = [
         external_link: "https://jsvaldezv.github.io/matrix-clock/",
         tech_used: ["/logos/js.png"],
         main_image: "/webdev/viewMatrix.png",
-        yt_link: "https://www.youtube.com/embed/V2Mts2ZvCYU?si=lbF2XY-8GRHY-bkt",
+        yt_link:
+            "https://www.youtube.com/embed/V2Mts2ZvCYU?si=lbF2XY-8GRHY-bkt",
         path: "/software/web-dev/matrix-clock",
         github: "https://github.com/jsvaldezv/matrix-clock",
         padding: true,
-
-        
     },
     // Machine learning
     {
@@ -397,7 +404,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/clingo-drum-machine",
         tech_used: ["/logos/python.png", "/logos/clingo.png"],
         main_image: "/py-ml/viewBuilder.png",
-        yt_link: "https://www.youtube.com/embed/Qpgreskee0o?si=U9ljWvZNrGQFiFL2",
+        yt_link:
+            "https://www.youtube.com/embed/Qpgreskee0o?si=U9ljWvZNrGQFiFL2",
         path: "/software/web-dev/clingo-drum-machine",
         github: "https://github.com/jsvaldezv/clingo-drum-machine",
         padding: true,
@@ -412,7 +420,8 @@ export const projects = [
         external_link: "https://github.com/jsvaldezv/clingo-mixer",
         tech_used: ["/logos/python.png", "/logos/clingo.png"],
         main_image: "/py-ml/viewMixer.png",
-        yt_link: "https://www.youtube.com/embed/hYVwZCYkBZs?si=UtINBKzq8cwBU3vQ",
+        yt_link:
+            "https://www.youtube.com/embed/hYVwZCYkBZs?si=UtINBKzq8cwBU3vQ",
         path: "/software/web-dev/clingo-mixer",
         github: "https://github.com/jsvaldezv/clingo-mixer",
         padding: true,

@@ -46,7 +46,10 @@ const JobPosition = ({ date, mainTitle, subTitle, description, bullets }) => {
                 <ul className="list-disc ms-6 mt-3 space-y-1.5">
                     {bullets.map((item, index) => {
                         return (
-                            <li className="ps-1 text-sm text-gray-600 dark:text-neutral-400">
+                            <li
+                                className="ps-1 text-sm text-gray-600 dark:text-neutral-400"
+                                key={item + index}
+                            >
                                 {item}
                             </li>
                         );

@@ -1,11 +1,12 @@
 import Link from "next/link";
-// import Image from "next/image";
 
 const Logo = () => {
     return (
-        <Link href="/">
-            <h1 className="text-2xl font-bold">Jesús Valdez</h1>
-            {/* <Image src="/logo.png" width={54} height={54} priority alt="" /> */}
+        <Link
+            href="/"
+            className="font-bold text-base tracking-tight text-foreground hover:opacity-80 transition-opacity"
+        >
+            Jesús Valdez
         </Link>
     );
 };

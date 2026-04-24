@@ -4,11 +4,12 @@ import JobPosition from "./position-job";
 
 const Projects = () => {
     return (
-        <section className="min-h-screen pt-12 mb-12">
-            <div className="container mx-auto">
-                <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-                    CV
-                </h2>
+        <section className="min-h-screen py-16 mb-12">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-10">
+                    <p className="section-eyebrow">Experience</p>
+                    <h2 className="h2">Curriculum Vitae</h2>
+                </div>
                 <div className="pt-8">
                     <JobPosition
                         date={"Jan 2021 - Present"}
