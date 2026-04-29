@@ -1,5 +1,6 @@
 import DevImg from "./Devlmg";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const Hero = () => {
     return (
@@ -11,29 +12,30 @@ const Hero = () => {
                         <p className="section-eyebrow">
                             Audio Software Developer
                         </p>
-                        <h1 className="h1 mb-5">
+                        <h1 className="h1 mb-6">
                             Hello, I&apos;m{" "}
-                            <span className="block sm:inline">
-                                Jesús Valdez
-                            </span>
+                            <span className="block">Jesús Valdez</span>
                         </h1>
-                        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-md mx-auto xl:mx-0 mb-8">
+                        <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed max-w-lg mx-auto xl:mx-0 mb-8">
                             Innovating in audio means filling silence with
                             unheard beauty
                         </p>
                         <Socials
                             containerStyles="flex gap-x-5 justify-center xl:justify-start"
-                            iconsStyles="text-muted-foreground text-xl hover:text-foreground transition-colors duration-200"
+                            iconsStyles="text-muted-foreground text-2xl hover:text-foreground transition-colors duration-200"
                         />
                     </div>
 
-                    {/* Photo */}
+                    {/* Photo + Shape */}
                     <div className="order-1 xl:order-2 flex justify-center xl:justify-end">
-                        <div className="relative w-52 h-52 sm:w-72 sm:h-72 xl:w-[400px] xl:h-[400px] rounded-2xl overflow-hidden bg-secondary">
-                            <DevImg
-                                containerStyles="absolute inset-0"
-                                imgSrc="/hero/developer.png"
-                            />
+                        <div className="flex flex-col items-center">
+                            {/* Circular photo */}
+                            <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 xl:w-[460px] xl:h-[460px] rounded-full overflow-hidden bg-secondary ring-4 ring-border">
+                                <DevImg
+                                    containerStyles="absolute inset-0"
+                                    imgSrc="/hero/developer.png"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

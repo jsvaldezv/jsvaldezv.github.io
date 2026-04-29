@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <Link
             href="/"
-            className="font-bold text-base tracking-tight text-foreground hover:opacity-80 transition-opacity"
+            className="font-bold text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity"
         >
             Jesús Valdez
         </Link>

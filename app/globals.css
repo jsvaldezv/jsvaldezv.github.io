@@ -65,7 +65,7 @@
 /* ---- Typography ---- */
 
 .h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1.1;
     letter-spacing: -1px;
     font-weight: 700;
@@ -73,14 +73,14 @@
 
 @media (min-width: 640px) {
     .h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
 @media (min-width: 1024px) {
     .h1 {
-        font-size: 3.75rem;
-        letter-spacing: -2px;
+        font-size: 5.5rem;
+        letter-spacing: -3px;
     }
 }
 

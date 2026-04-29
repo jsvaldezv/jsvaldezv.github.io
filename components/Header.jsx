@@ -23,12 +23,13 @@ const Header = () => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <Logo />
-                    <div className="flex items-center gap-x-4">
+                    <div className="flex items-center gap-x-6">
                         <Nav
                             containerStyles="hidden xl:flex gap-x-8 items-center"
-                            linkStyles="relative text-sm text-muted-foreground hover:text-foreground transition-colors"
+                            linkStyles="relative text-base text-muted-foreground hover:text-foreground transition-colors"
                             underlineStyles="absolute left-0 top-full h-[2px] bg-foreground w-full"
                         />
+                        <div className="hidden xl:block w-px h-5 bg-border" />
                         <ThemeToggler />
                         <div className="xl:hidden">
                             <MobileNav />

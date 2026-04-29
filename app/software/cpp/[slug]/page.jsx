@@ -2,13 +2,14 @@ import { projects } from "@/app/software/projects";
 import SoftwareHero from "@/components/SoftwareHero";
 
 export function generateStaticParams() {
-    return projects.map((project) => ({
-        slug: project.slug,
-    }));
+    return projects
+        .filter((p) => p.category === "C++")
+        .map((project) => ({ slug: project.slug }));
 }
 
-const SoftwarePage = ({ params }) => {
-    const product = projects.find((p) => p.slug === params.slug);
+const SoftwarePage = async ({ params }) => {
+    const { slug } = await params;
+    const product = projects.find((p) => p.slug === slug);
     if (!product) return <div>Project not found</div>;
 
     return (

@@ -1,21 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
-import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import { projects } from "./projects";
 
-// Remove category duplicates
 const uniqueCategories = [
     "all",
     ...new Set(projects.map((item) => item.category)),
 ];
 
 const Projects = () => {
-    const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all");
-    const filteredProjects = projects.filter((project) => {
-        return category === "all" ? project : project.category === category;
-    });
+    const filteredProjects = projects.filter((project) =>
+        category === "all" ? true : project.category === category
+    );
 
     return (
         <section className="min-h-screen py-16">
@@ -24,33 +21,33 @@ const Projects = () => {
                     <p className="section-eyebrow">Work</p>
                     <h2 className="h2">Software Projects</h2>
                 </div>
-                {/* Tabs */}
-                <Tabs defaultValue={category} className="mb-16">
-                    <TabsList className="w-full flex flex-wrap h-auto gap-1 mb-8 mx-auto max-w-3xl">
-                        {categories.map((category, index) => {
-                            return (
-                                <TabsTrigger
-                                    onClick={() => setCategory(category)}
-                                    value={category}
-                                    key={index}
-                                    className="capitalize text-sm flex-grow-0"
-                                >
-                                    {category}
-                                </TabsTrigger>
-                            );
-                        })}
-                    </TabsList>
-                    {/* Tabs content */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                        {filteredProjects.map((project, index) => {
-                            return (
-                                <TabsContent value={category} key={index}>
-                                    <ProjectCard project={project} />
-                                </TabsContent>
-                            );
-                        })}
-                    </div>
-                </Tabs>
+
+                {/* Filter buttons */}
+                <div className="flex flex-wrap gap-2 justify-center mb-10">
+                    {uniqueCategories.map((cat) => (
+                        <button
+                            key={cat}
+                            onClick={() => setCategory(cat)}
+                            className={`capitalize px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                                category === cat
+                                    ? "bg-foreground text-background shadow-sm"
+                                    : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/70"
+                            }`}
+                        >
+                            {cat}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Grid — key forces remount on category change, replaying the CSS animation */}
+                <div
+                    key={category}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in"
+                >
+                    {filteredProjects.map((project, index) => (
+                        <ProjectCard project={project} key={project.slug ?? index} />
+                    ))}
+                </div>
             </div>
         </section>
     );
