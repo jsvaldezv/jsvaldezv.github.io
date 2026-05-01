@@ -1,60 +1,51 @@
 import { GanttChartSquare, Blocks, Gem } from "lucide-react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
 
 const servicesData = [
     {
-        icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+        icon: <GanttChartSquare size={28} strokeWidth={1.5} />,
         title: "Web Design",
-        description: "Lorem ipsum resekjd jfod fje jfeijf  jfeoj feo",
+        description:
+            "Designing clean, modern, and user-friendly interfaces that leave a lasting impression.",
     },
     {
-        icon: <Blocks size={72} strokeWidth={0.8} />,
+        icon: <Blocks size={28} strokeWidth={1.5} />,
         title: "Web Development",
-        description: "Lorem ipsum resekjd jfod fje jfeijf  jfeoj feo",
+        description:
+            "Building performant, scalable web applications with modern frameworks and best practices.",
     },
     {
-        icon: <Gem size={72} strokeWidth={0.8} />,
+        icon: <Gem size={28} strokeWidth={1.5} />,
         title: "App Development",
-        description: "Lorem ipsum resekjd jfod fje jfeijf  jfeoj feo",
+        description:
+            "Creating audio software and plug-ins that push the boundaries of music production.",
     },
 ];
 
 const Services = () => {
     return (
-        <section className="mb-12 xl:mb-36">
-            <div className="container mx-auto">
-                <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
-                    My Services
-                </h2>
-                <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
-                    {servicesData.map((item, index) => {
-                        return (
-                            <Card
-                                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                                key={index}
-                            >
-                                <CardHeader className="text-primary absolute -top-[60px]">
-                                    <div className="w-[140px] h-[80px] bg-white dark:background flex justify-center items-center">
-                                        {item.icon}
-                                    </div>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <CardTitle className="mb-4">
-                                        {item.title}
-                                    </CardTitle>
-                                    <CardDescription className="text-lg">
-                                        {item.description}
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        );
-                    })}
+        <section className="py-20 xl:py-28 border-t border-border">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                    <p className="section-eyebrow">What I do</p>
+                    <h2 className="h2">My Services</h2>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                    {servicesData.map((item, index) => (
+                        <div
+                            key={index}
+                            className="border border-border rounded-xl p-8 hover:border-foreground/20 transition-colors"
+                        >
+                            <div className="w-11 h-11 bg-secondary rounded-lg flex items-center justify-center mb-5 text-foreground">
+                                {item.icon}
+                            </div>
+                            <h3 className="font-semibold text-foreground mb-2">
+                                {item.title}
+                            </h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                {item.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

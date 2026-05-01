@@ -14,9 +14,7 @@ const Projects = () => {
     const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all");
     const filteredProjects = talksList.filter((project) => {
-        return category === "all"
-            ? project
-            : project.category === category;
+        return category === "all" ? project : project.category === category;
     });
 
     return (

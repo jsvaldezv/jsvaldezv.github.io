@@ -1,49 +1,42 @@
 "use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
-
-import "swiper/css";
-import "swiper/css/pagination";
-
-import { Pagination } from "swiper/modules";
-
 import ProjectCard from "@/components/ProjectCard";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const projectData = [
     {
-        image: "/plugins/viewTwizzlay.png",
+        main_title: "SweetPoint",
         category: "Audio Plug-in",
-        technology: "C++ and JUCE",
-        name: "Twizzlay",
-        description: "Ping Pong Delay Audio Plug-in",
-        link: "https://earcandytech.com/twizzlay",
+        short_description: "Smart Stereo Field Optimizer",
+        main_image: "/plugins/viewSweetpoint.png",
+        path: "/software/audio-plugin/sweetpoint",
+        link: "https://earcandytech.com/sweetpoint",
         github: "none",
     },
     {
-        image: "/plugins/viewPhono.png",
+        main_title: "Phonograin",
         category: "Audio Plug-in",
-        technology: "C++ and JUCE",
-        name: "Phonograin",
-        description: "Granular Multi FX Audio Plug-in",
+        short_description: "Granular Multi FX",
+        main_image: "/plugins/viewPhono.png",
+        path: "/software/audio-plugin/phonograin",
         link: "https://earcandytech.com/phonograin",
         github: "none",
     },
     {
-        image: "/webdev/viewECT.png",
-        category: "React JS",
-        technology: "React JS and Firebase",
-        name: "Ear Candy Technologies Website",
-        description: "Current Company Website",
+        main_title: "Ear Candy Technologies",
+        category: "Web Dev",
+        short_description: "Company Website — React & Firebase",
+        main_image: "/webdev/viewECT.png",
+        path: "/software/web-dev/ear-candy-tech",
         link: "https://earcandytech.com/",
         github: "none",
     },
     {
-        image: "/webdev/viewDrum.png",
+        main_title: "Drum Machine",
         category: "JavaScript",
-        technology: "JavaScript",
-        name: "Drum Machine",
-        description: "Real Time Drum Machine in the Browser",
+        short_description: "Real-Time Drum Machine in the Browser",
+        main_image: "/webdev/viewDrum.png",
+        path: "/software/web-dev/drum-machine",
         link: "https://jsvaldezv.github.io/drum-machine/",
         github: "https://github.com/jsvaldezv/drum-machine",
     },
@@ -51,38 +44,26 @@ const projectData = [
 
 const Work = () => {
     return (
-        <section className="relative mb-12 xl:mb-48">
-            <div className="container mx-auto">
-                {/* Text */}
-                <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-                    <h2 className="section-title mb-4">Latest Projects</h2>
-                    <p className="subtitle mb-8">Some of my work</p>
-                    <Link href="/software">
-                        <Button>All projects</Button>
+        <section className="py-20 xl:py-28 border-t border-border">
+            <div className="container mx-auto px-4">
+                {/* Header row */}
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+                    <div className="text-center sm:text-left">
+                        <p className="section-eyebrow">Portfolio</p>
+                        <h2 className="h2">Latest Projects</h2>
+                    </div>
+                    <Link href="/software" className="mx-auto sm:mx-0">
+                        <Button variant="outline" size="sm">
+                            View all projects
+                        </Button>
                     </Link>
                 </div>
-                {/* slider */}
-                <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 xl:mr-8">
-                    <Swiper
-                        className="h-[480px]"
-                        slidesPerView={1}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 2,
-                            },
-                        }}
-                        spaceBetween={30}
-                        modules={[Pagination]}
-                        pagination={{ clickable: true }}
-                    >
-                        {projectData.slice(0.4).map((project, index) => {
-                            return (
-                                <SwiperSlide key={index}>
-                                    <ProjectCard project={project} />
-                                </SwiperSlide>
-                            );
-                        })}
-                    </Swiper>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    {projectData.map((project, index) => (
+                        <ProjectCard project={project} key={index} />
+                    ))}
                 </div>
             </div>
         </section>
