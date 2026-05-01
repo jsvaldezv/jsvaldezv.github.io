@@ -3,7 +3,7 @@ import SoftwareHero from "@/components/SoftwareHero";
 
 export function generateStaticParams() {
     return projects
-        .filter((p) => p.path?.startsWith("/software/cpp/"))
+        .filter((p) => p.path?.startsWith("/software/py-ml/"))
         .map((project) => ({ slug: project.slug }));
 }
 

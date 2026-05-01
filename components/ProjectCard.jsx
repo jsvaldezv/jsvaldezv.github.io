@@ -6,15 +6,32 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md hover:border-foreground/10 transition-all duration-300">
             {/* Image */}
-            <div className="relative aspect-video overflow-hidden bg-secondary">
-                {project.main_image && (
-                    <Image
-                        src={project.main_image}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        alt={project.main_title}
-                    />
-                )}
+            <div
+                className={`relative aspect-video overflow-hidden bg-secondary ${project.image_fit === "cover" ? "" : "p-4"}`}
+                style={
+                    project.gradient && project.image_fit !== "cover"
+                        ? { background: project.gradient }
+                        : undefined
+                }
+            >
+                {project.main_image &&
+                    (project.image_fit === "cover" ? (
+                        <Image
+                            src={project.main_image}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            alt={project.main_title}
+                        />
+                    ) : (
+                        <div className="relative w-full h-full">
+                            <Image
+                                src={project.main_image}
+                                fill
+                                className="object-contain transition-transform duration-500 group-hover:scale-105"
+                                alt={project.main_title}
+                            />
+                        </div>
+                    ))}
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/50 transition-all duration-300" />
                 {/* Action buttons */}
@@ -56,7 +73,10 @@ const ProjectCard = ({ project }) => {
                 {project.tech_used && project.tech_used.length > 0 && (
                     <div className="flex items-center gap-2 pt-4 mt-auto border-t border-border">
                         {project.tech_used.map((logo, i) => (
-                            <div key={i} className="relative w-5 h-5 opacity-60">
+                            <div
+                                key={i}
+                                className="relative w-5 h-5"
+                            >
                                 <Image
                                     src={logo}
                                     fill

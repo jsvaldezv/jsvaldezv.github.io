@@ -14,17 +14,12 @@ const infoData = [
         text: "Specialized in Audio Plug-ins",
     },
     { icon: <GraduationCap size={16} />, text: "Music Production Engineer" },
-    { icon: <Lightbulb size={16} />, text: "Freelancer" },
-    { icon: <PiggyBank size={16} />, text: "Entrepreneur" },
-    { icon: <Disc3 size={16} />, text: "DJ & Producer" },
-    { icon: <Award size={16} />, text: "Beginner Tennis Player" },
 ];
 
 const About = () => {
     return (
         <section className="py-20 xl:py-28 border-t border-border">
             <div className="container mx-auto px-4">
-
                 {/* Block 1: text left | image right */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20 items-center">
                     <div className="text-center md:text-left">
@@ -109,7 +104,6 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
     );

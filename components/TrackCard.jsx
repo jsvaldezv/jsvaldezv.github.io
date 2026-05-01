@@ -29,7 +29,7 @@ const TrackCard = ({ project }) => {
                 {project.tech_used && project.tech_used.length > 0 && (
                     <div className="flex items-center gap-2 pt-4 mt-auto border-t border-border">
                         {project.tech_used.map((logo, i) => (
-                            <div key={i} className="relative w-5 h-5 opacity-60">
+                            <div key={i} className="relative w-5 h-5">
                                 <Image
                                     src={logo}
                                     fill

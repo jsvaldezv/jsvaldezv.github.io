@@ -3,7 +3,7 @@ import SoftwareHero from "@/components/SoftwareHero";
 
 export function generateStaticParams() {
     return projects
-        .filter((p) => p.category === "Web Development")
+        .filter((p) => p.path?.startsWith("/software/web-dev/"))
         .map((project) => ({ slug: project.slug }));
 }
 
@@ -22,6 +22,7 @@ const SoftwarePage = async ({ params }) => {
             TechnologiesUsed={product.tech_used}
             MainImage={product.main_image}
             YouTubeLink={product.yt_link}
+            Gallery={product.gallery}
         />
     );
 };
