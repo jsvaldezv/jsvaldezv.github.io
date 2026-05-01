@@ -21,7 +21,11 @@ const About = () => {
         <section className="py-20 xl:py-28 border-t border-border">
             <div className="container mx-auto px-4">
                 {/* Block 1: text left | image right */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20 items-center">
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20 items-center">
+                    {/* Ghost number */}
+                    <span className="pointer-events-none select-none absolute -top-6 -left-2 text-[8rem] xl:text-[10rem] font-black leading-none text-foreground/[0.04] dark:text-foreground/[0.06]">
+                        01
+                    </span>
                     <div className="text-center md:text-left">
                         <p className="section-eyebrow">About me</p>
                         <h2 className="h2 mb-5">
@@ -63,8 +67,21 @@ const About = () => {
                     </div>
                 </div>
 
+                {/* Divider */}
+                <div className="mt-20 xl:mt-28 flex items-center gap-4">
+                    <span className="flex-1 h-px bg-border" />
+                    <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+                        Background
+                    </span>
+                    <span className="flex-1 h-px bg-border" />
+                </div>
+
                 {/* Block 2: image left | bio text right */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20 items-center mt-20 xl:mt-28">
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20 items-center mt-10">
+                    {/* Ghost number */}
+                    <span className="pointer-events-none select-none absolute -top-6 right-0 text-[8rem] xl:text-[10rem] font-black leading-none text-foreground/[0.04] dark:text-foreground/[0.06]">
+                        02
+                    </span>
                     <div className="flex justify-center md:justify-start order-1">
                         <div className="relative aspect-square w-full max-w-[420px] rounded-2xl overflow-hidden bg-secondary">
                             <DevImg
@@ -75,7 +92,6 @@ const About = () => {
                     </div>
 
                     <div className="order-2 text-center md:text-left space-y-5">
-                        <p className="section-eyebrow">Background</p>
                         <h2 className="h2 mb-5">Experience &amp; Education</h2>
                         <p className="text-muted-foreground leading-relaxed">
                             Jesús Valdez holds a B.S. in Music Production

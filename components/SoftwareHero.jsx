@@ -14,8 +14,22 @@ const SoftwareHero = ({
     Gallery,
 }) => {
     return (
-        <section className="min-h-screen pt-12 pb-20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative min-h-screen pt-12 pb-20 overflow-hidden">
+            {/* Dot grid */}
+            <div
+                className="pointer-events-none absolute inset-0 z-0 opacity-[0.035] dark:opacity-[0.07]"
+                style={{
+                    backgroundImage:
+                        "radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)",
+                    backgroundSize: "28px 28px",
+                }}
+            />
+            {/* Corner accents */}
+            <span className="pointer-events-none absolute z-0 top-8 left-4 sm:left-8 w-12 h-px bg-border" />
+            <span className="pointer-events-none absolute z-0 top-8 left-4 sm:left-8 w-px h-12 bg-border" />
+            <span className="pointer-events-none absolute z-0 bottom-8 right-4 sm:right-8 w-12 h-px bg-border" />
+            <span className="pointer-events-none absolute z-0 bottom-8 right-4 sm:right-8 w-px h-12 bg-border" />
+            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back link */}
                 <Link
                     className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
@@ -42,9 +56,12 @@ const SoftwareHero = ({
                 <div className="mt-10 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                     {/* Left — info */}
                     <div className="flex flex-col gap-5">
-                        <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-                            {Category}
-                        </span>
+                        <div className="inline-flex items-center gap-2">
+                            <span className="block w-6 h-px bg-foreground/40" />
+                            <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+                                {Category}
+                            </span>
+                        </div>
                         <h1 className="h1 text-foreground">{MainTitle}</h1>
                         <p className="text-base text-muted-foreground leading-relaxed">
                             {ShortDescription}
@@ -114,7 +131,11 @@ const SoftwareHero = ({
 
                 {/* Description */}
                 <div className="mt-16">
-                    <h2 className="h3 text-foreground mb-4">What it does?</h2>
+                    <div className="flex items-center gap-4 mb-6">
+                        <span className="flex-1 h-px bg-border" />
+                        <h2 className="h3 text-foreground">What it does?</h2>
+                        <span className="flex-1 h-px bg-border" />
+                    </div>
                     <p className="text-base text-muted-foreground leading-relaxed">
                         {LargeDescription}
                     </p>

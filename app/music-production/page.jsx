@@ -15,10 +15,28 @@ const MusicProduction = () => {
     );
 
     return (
-        <section className="min-h-screen py-16">
-            <div className="container mx-auto px-4">
+        <section className="relative min-h-screen py-16 overflow-hidden">
+            {/* Dot grid */}
+            <div
+                className="pointer-events-none absolute inset-0 z-0 opacity-[0.035] dark:opacity-[0.07]"
+                style={{
+                    backgroundImage:
+                        "radial-gradient(circle, hsl(var(--foreground)) 1px, transparent 1px)",
+                    backgroundSize: "28px 28px",
+                }}
+            />
+            {/* Corner accents */}
+            <span className="pointer-events-none absolute z-0 top-8 left-4 sm:left-8 w-12 h-px bg-border" />
+            <span className="pointer-events-none absolute z-0 top-8 left-4 sm:left-8 w-px h-12 bg-border" />
+            <span className="pointer-events-none absolute z-0 bottom-8 right-4 sm:right-8 w-12 h-px bg-border" />
+            <span className="pointer-events-none absolute z-0 bottom-8 right-4 sm:right-8 w-px h-12 bg-border" />
+            <div className="relative z-10 container mx-auto px-4">
                 <div className="text-center mb-10">
-                    <p className="section-eyebrow">Creative Work</p>
+                    <div className="inline-flex items-center justify-center gap-2 mb-2">
+                        <span className="block w-6 h-px bg-foreground/40" />
+                        <p className="section-eyebrow !mb-0">Creative Work</p>
+                        <span className="block w-6 h-px bg-foreground/40" />
+                    </div>
                     <h2 className="h2">Music Production</h2>
                 </div>
 
