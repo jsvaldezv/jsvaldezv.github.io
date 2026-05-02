@@ -44,7 +44,7 @@ const About = () => {
                             {infoData.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center gap-3 text-sm"
+                                    className="flex items-center justify-center md:justify-start gap-3 text-sm"
                                 >
                                     <span className="text-muted-foreground flex-shrink-0">
                                         {item.icon}

@@ -8,7 +8,7 @@ export const talksList = [
         large_description:
             "SweetPoint is an innovative audio plugin designed to smartly optimize your stereo field with transparent mid-side processing. Featuring a unique, in-house-developed smart assistant, SweetPoint provides expert guidance to help you achieve your ideal stereo image effortlessly.",
         external_link: "https://earcandytech.com/sweetpoint",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/viewSweetpoint.png",
         yt_link:
             "https://www.youtube.com/embed/8JyBXTnEblc?si=Dt496cZ-f84R882P",
@@ -25,7 +25,7 @@ export const talksList = [
         large_description:
             "SweetPoint is an innovative audio plugin designed to smartly optimize your stereo field with transparent mid-side processing. Featuring a unique, in-house-developed smart assistant, SweetPoint provides expert guidance to help you achieve your ideal stereo image effortlessly.",
         external_link: "https://earcandytech.com/sweetpoint",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/viewSweetpoint.png",
         yt_link:
             "https://www.youtube.com/embed/8JyBXTnEblc?si=Dt496cZ-f84R882P",
@@ -42,7 +42,7 @@ export const talksList = [
         large_description:
             "SweetPoint is an innovative audio plugin designed to smartly optimize your stereo field with transparent mid-side processing. Featuring a unique, in-house-developed smart assistant, SweetPoint provides expert guidance to help you achieve your ideal stereo image effortlessly.",
         external_link: "https://earcandytech.com/sweetpoint",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/viewSweetpoint.png",
         yt_link:
             "https://www.youtube.com/embed/8JyBXTnEblc?si=Dt496cZ-f84R882P",
@@ -59,7 +59,7 @@ export const talksList = [
         large_description:
             "SweetPoint is an innovative audio plugin designed to smartly optimize your stereo field with transparent mid-side processing. Featuring a unique, in-house-developed smart assistant, SweetPoint provides expert guidance to help you achieve your ideal stereo image effortlessly.",
         external_link: "https://earcandytech.com/sweetpoint",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/viewSweetpoint.png",
         yt_link:
             "https://www.youtube.com/embed/8JyBXTnEblc?si=Dt496cZ-f84R882P",
