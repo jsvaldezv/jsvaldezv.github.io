@@ -8,7 +8,7 @@ export const projects = [
         large_description:
             "SweetPoint is an innovative audio plugin designed to smartly optimize your stereo field with transparent mid-side processing. Featuring a unique, in-house-developed smart assistant, SweetPoint provides expert guidance to help you achieve your ideal stereo image effortlessly.",
         external_link: "https://earcandytech.com/sweetpoint",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/sweetpoint.png",
         yt_link:
             "https://www.youtube.com/embed/8JyBXTnEblc?si=Dt496cZ-f84R882P",
@@ -26,7 +26,7 @@ export const projects = [
         large_description:
             "Twizzlay takes ping-pong delay to the next level. Beyond adding spatial depth and movement, it spices up your sound with exclusive Flavor tuning and streamlines your workflow with Routing. Elevate your sound effortlessly with Twizzlay!",
         external_link: "https://earcandytech.com/twizzlay",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/twizzlay.png",
         yt_link:
             "https://www.youtube.com/embed/t8R5U_CMPIo?si=WsXmGYKAnR1sh1gG",
@@ -43,7 +43,7 @@ export const projects = [
         large_description:
             "Gummy Groove is your ultimate Chorus plugin, designed to enrich your vocals, add depth to instruments and enhance the stereo image of your mix, it boosts your audio with exclusive Flavor tuning and simplifies your creative process with Routing. Gummy Groove is the go-to solution for creating captivating sonic environments.",
         external_link: "https://www.earcandytech.com/gummygroove",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/gummygroove.png",
         yt_link:
             "https://www.youtube.com/embed/t8R5U_CMPIo?si=WsXmGYKAnR1sh1gG",
@@ -60,7 +60,7 @@ export const projects = [
         large_description:
             "Transform any sound into atmospheric pads, glitch fragments, or immersive soundscapes with Phonograin's powerful granular engine and expressive modulation modules. The Granular module is the core of Phonograin. Experiment with up to 5 high-quality granular algorithms. Play with size, pitch, rate and offset to chop and blend all at once.",
         external_link: "https://earcandytech.com/phonograin",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/phonograin.png",
         yt_link:
             "https://www.youtube.com/embed/V8IZB2xz8MA?si=ezoNY268sMlp6VWt",
@@ -77,7 +77,7 @@ export const projects = [
         large_description:
             "Shape offers a unique take on EQ, focusing on psychoacoustics and equal loudness curves. This powerful, user-friendly plugin enables you to fine-tune the perceived loudness and frequency balance of any sound in a way that is natural, ear-friendly, and inspiring.",
         external_link: "https://www.oikla.com/",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/shape.png",
         yt_link:
             "https://www.youtube.com/embed/PLVGIz-hD2Q?si=sp8_yCK6lJ4MMkQF",
@@ -94,7 +94,7 @@ export const projects = [
         large_description:
             "This granular sampler instrument is designed for creative sound design and advanced sample manipulation, featuring a powerful set of tools for real-time audio experimentation. It includes five unique granular synthesis algorithms, pitch shifting, time stretching, polyphonic voice support, and an integrated recording function for capturing and transforming custom samples instantly.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/tlaloc.png",
         yt_link:
             "https://www.youtube.com/embed/qafHudaDKiE?si=Kq7yJnPE00aOrfjO",
@@ -111,7 +111,7 @@ export const projects = [
         large_description:
             "Whether crafting wide pop choruses, cinematic pads, or percussive textures that breathe, Esmeralda II transforms ordinary tracks into immersive, professional mixes. Shape anything from tight rooms to lush halls and abstract FX. Choose between multiple Reverb Types and Impulse Responses for total character control.",
         external_link: "https://earcandytech.com/esmeraldaii",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/esmeraldaii.png",
         yt_link:
             "https://www.youtube.com/embed/KxEpmuFIMKs?si=tJ91z3gGoCRugBJO",
@@ -128,7 +128,7 @@ export const projects = [
         large_description:
             "Take your tracks from ordinary to unforgettable with Ruby II, the modern delay-tremolo powerhouse inspired by the raw energy and allure of the red gemstone. Effortlessly design custom echo patterns. The intuitive 16-step sequencer turns your delay repeats into creative rhythmic phrases or glitchy rolls.",
         external_link: "https://earcandytech.com/rubyii",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/rubyii.png",
         yt_link:
             "https://www.youtube.com/embed/KxEpmuFIMKs?si=tJ91z3gGoCRugBJO",
@@ -145,7 +145,7 @@ export const projects = [
         large_description:
             "From subtle crisp to sonic destruction, Zafiro II gives you full control over how your sound breaks, warms, or shatters. Elevate your creativity with the metallic edge of this electric-blue gem.",
         external_link: "https://earcandytech.com/zafiroii",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/zafiroii.png",
         yt_link:
             "https://www.youtube.com/embed/KxEpmuFIMKs?si=tJ91z3gGoCRugBJO",
@@ -162,7 +162,7 @@ export const projects = [
         large_description:
             "Unleash a dynamic spectral-shaping effect inspired by the mysterious depth and shifting reflections of the volcanic gemstone. With Obsidian’s wide range of filter types, you can craft everything from gentle tonal shaping to dramatic, shifting textures. Combined with modulation, the filters become highly expressive tools.",
         external_link: "https://earcandytech.com/obsidian",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/obsidian.png",
         yt_link:
             "https://www.youtube.com/embed/KxEpmuFIMKs?si=tJ91z3gGoCRugBJO",
@@ -179,7 +179,7 @@ export const projects = [
         large_description:
             "From classic musical transpositions to robotic transformations and futuristic spectral textures, Ambar turns any sound into something entirely new. Choose between Classic, Modern, and Spectral to redefine how your sound re-builds. Each mode offers its own personality — musical and warm, synthetic and robotic, or harmonically rich and re-synthesized.",
         external_link: "https://earcandytech.com/ambar",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/ambar.png",
         yt_link:
             "https://www.youtube.com/embed/KxEpmuFIMKs?si=tJ91z3gGoCRugBJO",
@@ -198,7 +198,7 @@ export const projects = [
             "Audio plugins developed using JUCE and C++, combined with Vite and React.js for building modern, responsive, and interactive user interfaces. These plugins feature advanced audio processing tools including denoise algorithms for noise reduction and signal cleanup, equalization (EQ) for precise tonal shaping, delay effects for spatial depth and rhythmic creativity, and pitch shifting for harmonic transformation and sound design.",
         external_link: "none",
         tech_used: [
-            "/logos/JUCE.png",
+            "/logos/juce.png",
             "/logos/cpp.png",
             "/logos/vite.png",
             "/logos/react.png",
@@ -227,7 +227,7 @@ export const projects = [
         large_description:
             "A mathematical spatialization tool designed for 4-channel systems, based on equations derived from sine and cosine function analysis. It features two intuitive sliders that control the X and Y position of the sound source, allowing precise placement within the listening space. As the sliders are adjusted, the system dynamically recalculates and distributes the signal across four independent equations—one for each speaker—creating smooth, accurate, and immersive sound movement.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/spatial.png",
         yt_link: "none",
         path: "/software/audio-plugin/spatializer",
@@ -243,7 +243,7 @@ export const projects = [
         large_description:
             "A versatile distortion plug-in featuring three distinct saturation modes, each designed to deliver unique tonal character and harmonic texture. With fully adjustable Drive, Range, Blend, and Volume controls, it offers precise command over the intensity, frequency response, wet/dry balance, and output level of the effect. Built for creative sound design and mix enhancement, the plug-in can produce everything from subtle analog-style warmth and gentle coloration to heavy saturation, aggressive clipping, and extreme sonic transformation.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/funnyDistor.png",
         yt_link: "none",
         path: "/software/audio-plugin/funny-distortion",
@@ -260,7 +260,7 @@ export const projects = [
         large_description:
             "An FM-based virtual synthesizer designed for versatile sound creation and expressive performance. It features a powerful single oscillator with selectable waveforms, allowing a wide range of tonal possibilities—from clean digital textures to aggressive synthetic leads and basses. The instrument includes dedicated gain control, a fully adjustable ADSR envelope for precise shaping of dynamics, and an integrated suite of audio effects: Reverb, Delay, Chorus, and Distortion. Together, these tools provide everything needed to craft rich, polished, and production-ready sounds directly within the instrument.",
         external_link: "https://github.com/jsvaldezv/banana-split",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/banana.png",
         yt_link:
             "https://www.youtube.com/embed/Zo8SV2MvIbw?si=WxW14SZExok0zR0F",
@@ -279,7 +279,7 @@ export const projects = [
             "A powerful and intuitive tool for real-time pitch manipulation, designed to give users precise control over the tonal character of any audio signal. Pitch can be shifted by up to ±12 semitones, making it ideal for harmonization, creative sound design, key changes, and tuning correction. Multiple pitch-shifting algorithms are available, allowing users to choose the processing style that best fits their artistic vision or technical requirements. Whether for subtle adjustments or dramatic transformations, it delivers flexible and musical pitch control in real time.",
         external_link:
             "https://github.com/jsvaldezv/pitch-shifter-audio-plugin",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/pitchshifter.png",
         yt_link:
             "https://www.youtube.com/embed/CtgiBxh_xW0?si=jOvRL8Mw_0APSkeX",
@@ -297,7 +297,7 @@ export const projects = [
         large_description:
             "A versatile audio processor designed for exploring a wide range of waveshaping algorithms and sculpting sound through nonlinear distortion. Built for both creative sound design and practical mix processing, it offers multiple shaping modes capable of producing everything from subtle harmonic enhancement to aggressive saturation and extreme tonal transformation. The processor includes comprehensive controls for precise tone shaping: Bypass for instant comparison, selectable waveshaper types, input gain, Drive for distortion intensity, Blend for parallel dry/wet processing, and output gain for final level adjustment. Auto Gain helps maintain consistent loudness during parameter changes, while an integrated limiter protects the output from unwanted clipping. Ideal for producers, engineers, and sound designers seeking flexible distortion with detailed control and professional workflow features.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/waveshapers.png",
         yt_link:
             "https://www.youtube.com/embed/7sWAE6YXOqU?si=00QuwD3LDlTrCbgZ",
@@ -315,7 +315,7 @@ export const projects = [
         large_description:
             "A real-time audio processor designed to recreate the tonal characteristics of professional studios, unique rooms, and headphone systems through advanced filter-based processing. Built as a high-performance plug-in, it loads generated filter sets and applies them instantly to incoming audio for accurate monitoring enhancement or creative sound transformation. Using real-time FIR filtering, the processor simulates the frequency response of acoustic spaces and playback systems, allowing users to experience how their mixes translate across different listening environments. Whether emulating control rooms, custom spaces, or headphone correction profiles, it provides a practical solution for better decision-making during production and mixing. Available in standard plug-in formats for seamless integration into modern audio workflows, it bridges acoustic simulation and digital signal processing in an intuitive and efficient tool.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/roomline.png",
         yt_link: "none",
         path: "/software/audio-plugin/roomline",
@@ -332,7 +332,7 @@ export const projects = [
         large_description:
             "An algorithmic reverb project inspired by the classic Schroeder reverb architecture, created to explore the foundations of digital spatial effects through multiple implementation approaches. Designed as both a creative processor and an educational research tool, it examines how different comb and all-pass filter structures shape the character, depth, and realism of reverberation. The project includes four distinct versions of the algorithm, each offering a unique interpretation of the classic design: one using built-in DSP components, custom variants with alternative tuning parameters, and implementations inspired by established reverb design methodologies. These differences allow direct comparison of tonal response, decay behavior, diffusion, and spatial texture. Ideal for sound designers, audio developers, and DSP enthusiasts, the project provides valuable insight into how subtle filter configuration changes can dramatically influence the perception of space and ambience.",
         external_link: "none",
-        tech_used: ["/logos/JUCE.png", "/logos/cpp.png"],
+        tech_used: ["/logos/juce.png", "/logos/cpp.png"],
         main_image: "/plugins/schroeder-reverb.png",
         yt_link:
             "https://private-user-images.githubusercontent.com/47612276/434162368-7880fcc7-22bb-42ca-bc50-51b9807df8fc.mov?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc2NzQ4NTgsIm5iZiI6MTc3NzY3NDU1OCwicGF0aCI6Ii80NzYxMjI3Ni80MzQxNjIzNjgtNzg4MGZjYzctMjJiYi00MmNhLWJjNTAtNTFiOTgwN2RmOGZjLm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTAxVDIyMjkxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUzMWVkNmQzYzE2OGQwMTdjMjhjMDU2OTcyNWUwMGMxOGNiNWNhOTEyOTc0NWQzMmZlZmFlM2YwMGRiNWMwZjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRnF1aWNrdGltZSJ9.RyrYMtBq-VuNf_c979Mzwcge0tLq-EkofeU63pZYzls",
